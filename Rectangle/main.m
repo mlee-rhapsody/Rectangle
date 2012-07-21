@@ -9,31 +9,29 @@
 #import <Foundation/Foundation.h>
 #import "Rectangle.h"
 #import "Square.h"
+#import "XYPoint.h"
 
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
         
-        // insert code here...
-        NSLog(@"Hello, World!");
+        Rectangle   *myRect     = [[Rectangle alloc] init];
+        XYPoint     *myPoint    = [[XYPoint alloc] init];
         
-        Rectangle *myRect = [[Rectangle alloc] init];
+        [myPoint setX:100 andY:200];
         
         [myRect setWidth:5 andHeight:8];
+        myRect.origin = myPoint;
         
-        NSLog(@"Rectangle: w=%i, h=%i", myRect.width, myRect.height);
-        NSLog(@"Area = %i, Perimeter = %i", [myRect area],
-              [myRect perimeter]);
+        NSLog(@"Rectangle w = %i, h = %i", 
+              myRect.width, myRect.height);
         
-        Square *mySquare = [[Square alloc] init];
+        NSLog(@"Origin at (%i, %i)", myRect.origin.x,
+              myRect.origin.y);
         
-        [mySquare setSide:5];
-        
-        NSLog(@"Square s = %i", mySquare.side);
-        NSLog(@"Area = %i, Perimeter = %i", 
-              [mySquare area], [mySquare perimeter]);
-        
+        NSLog(@"Area = %i, Perimeter = %i",
+              [myRect area], [myRect perimeter]);
     }
     return 0;
 }

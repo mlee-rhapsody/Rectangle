@@ -7,8 +7,12 @@
 //
 
 #import "Rectangle.h"
+#import "XYPoint.h"
 
 @implementation Rectangle
+{
+    XYPoint *origin;
+}
 
 @synthesize width = _width;
 @synthesize height = _height;
@@ -24,6 +28,15 @@
 
 -(int)perimeter{
     return 2*self.width + 2*self.height;
+}
+
+
+-(void)setOrigin:(XYPoint *)pt{
+    origin = pt;
+}
+
+-(XYPoint *)origin{
+    return origin;
 }
 
 @end

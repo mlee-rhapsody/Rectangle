@@ -1,0 +1,243 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F9644C115BAF85C00341AE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9644C015BAF85C00341AE9 /* Foundation.framework */; };
+		7F9644C415BAF85C00341AE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F9644C315BAF85C00341AE9 /* main.m */; };
+		7F9644C815BAF85C00341AE9 /* Rectangle.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7F9644C715BAF85C00341AE9 /* Rectangle.1 */; };
+		7F9644D415BAF9ED00341AE9 /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F9644D315BAF9ED00341AE9 /* Rectangle.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7F9644BA15BAF85C00341AE9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				7F9644C815BAF85C00341AE9 /* Rectangle.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7F9644BC15BAF85C00341AE9 /* Rectangle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Rectangle; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F9644C015BAF85C00341AE9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7F9644C315BAF85C00341AE9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7F9644C615BAF85C00341AE9 /* Rectangle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rectangle-Prefix.pch"; sourceTree = "<group>"; };
+		7F9644C715BAF85C00341AE9 /* Rectangle.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Rectangle.1; sourceTree = "<group>"; };
+		7F9644D215BAF9ED00341AE9 /* Rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
+		7F9644D315BAF9ED00341AE9 /* Rectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rectangle.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F9644B915BAF85C00341AE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F9644C115BAF85C00341AE9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F9644B115BAF85C00341AE9 = {
+			isa = PBXGroup;
+			children = (
+				7F9644C215BAF85C00341AE9 /* Rectangle */,
+				7F9644BF15BAF85C00341AE9 /* Frameworks */,
+				7F9644BD15BAF85C00341AE9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F9644BD15BAF85C00341AE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F9644BC15BAF85C00341AE9 /* Rectangle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F9644BF15BAF85C00341AE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F9644C015BAF85C00341AE9 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F9644C215BAF85C00341AE9 /* Rectangle */ = {
+			isa = PBXGroup;
+			children = (
+				7F9644C315BAF85C00341AE9 /* main.m */,
+				7F9644C715BAF85C00341AE9 /* Rectangle.1 */,
+				7F9644C515BAF85C00341AE9 /* Supporting Files */,
+				7F9644D215BAF9ED00341AE9 /* Rectangle.h */,
+				7F9644D315BAF9ED00341AE9 /* Rectangle.m */,
+			);
+			path = Rectangle;
+			sourceTree = "<group>";
+		};
+		7F9644C515BAF85C00341AE9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F9644C615BAF85C00341AE9 /* Rectangle-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F9644BB15BAF85C00341AE9 /* Rectangle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F9644CB15BAF85C00341AE9 /* Build configuration list for PBXNativeTarget "Rectangle" */;
+			buildPhases = (
+				7F9644B815BAF85C00341AE9 /* Sources */,
+				7F9644B915BAF85C00341AE9 /* Frameworks */,
+				7F9644BA15BAF85C00341AE9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rectangle;
+			productName = Rectangle;
+			productReference = 7F9644BC15BAF85C00341AE9 /* Rectangle */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F9644B315BAF85C00341AE9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 7F9644B615BAF85C00341AE9 /* Build configuration list for PBXProject "Rectangle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7F9644B115BAF85C00341AE9;
+			productRefGroup = 7F9644BD15BAF85C00341AE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F9644BB15BAF85C00341AE9 /* Rectangle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F9644B815BAF85C00341AE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F9644C415BAF85C00341AE9 /* main.m in Sources */,
+				7F9644D415BAF9ED00341AE9 /* Rectangle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7F9644C915BAF85C00341AE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7F9644CA15BAF85C00341AE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7F9644CC15BAF85C00341AE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rectangle/Rectangle-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7F9644CD15BAF85C00341AE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rectangle/Rectangle-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F9644B615BAF85C00341AE9 /* Build configuration list for PBXProject "Rectangle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F9644C915BAF85C00341AE9 /* Debug */,
+				7F9644CA15BAF85C00341AE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F9644CB15BAF85C00341AE9 /* Build configuration list for PBXNativeTarget "Rectangle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F9644CC15BAF85C00341AE9 /* Debug */,
+				7F9644CD15BAF85C00341AE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F9644B315BAF85C00341AE9 /* Project object */;
+}

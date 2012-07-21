@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Rectangle.h"
+#import "Square.h"
 
 int main(int argc, const char * argv[])
 {
@@ -24,6 +25,14 @@ int main(int argc, const char * argv[])
         NSLog(@"Rectangle: w=%i, h=%i", myRect.width, myRect.height);
         NSLog(@"Area = %i, Perimeter = %i", [myRect area],
               [myRect perimeter]);
+        
+        Square *mySquare = [[Square alloc] init];
+        
+        [mySquare setSide:5];
+        
+        NSLog(@"Square s = %i", mySquare.side);
+        NSLog(@"Area = %i, Perimeter = %i", 
+              [mySquare area], [mySquare perimeter]);
         
     }
     return 0;

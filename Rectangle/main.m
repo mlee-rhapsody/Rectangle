@@ -16,10 +16,15 @@ int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
-        Fraction *f = [[Fraction alloc] init];
-        [f noSuchMethod];
+        NSArray *myArray = [NSArray array];
+        
+        @try {
+            [myArray objectAtIndex:2];
+        }
+        @catch (NSException *exception) {
+            NSLog(@"Caught %@%@", exception.name, exception.reason);
+        }
         NSLog(@"Execution continues");
-    
     }
         
     return 0;

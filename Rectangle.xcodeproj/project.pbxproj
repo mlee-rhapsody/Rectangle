@@ -13,6 +13,8 @@
 		7F9644D415BAF9ED00341AE9 /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F9644D315BAF9ED00341AE9 /* Rectangle.m */; };
 		7F9644D815BB020B00341AE9 /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F9644D715BB020B00341AE9 /* Square.m */; };
 		7F9644DB15BB094C00341AE9 /* XYPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F9644DA15BB094C00341AE9 /* XYPoint.m */; };
+		7F9644EB15BBBA4200341AE9 /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F9644EA15BBBA4200341AE9 /* Fraction.m */; };
+		7F9644F315BBBAE600341AE9 /* Complex.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F9644F215BBBAE600341AE9 /* Complex.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +42,10 @@
 		7F9644D715BB020B00341AE9 /* Square.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Square.m; sourceTree = "<group>"; };
 		7F9644D915BB094B00341AE9 /* XYPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPoint.h; sourceTree = "<group>"; };
 		7F9644DA15BB094C00341AE9 /* XYPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPoint.m; sourceTree = "<group>"; };
+		7F9644E915BBBA4200341AE9 /* Fraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
+		7F9644EA15BBBA4200341AE9 /* Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
+		7F9644F115BBBAE600341AE9 /* Complex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Complex.h; sourceTree = "<group>"; };
+		7F9644F215BBBAE600341AE9 /* Complex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Complex.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,8 @@
 		7F9644C215BAF85C00341AE9 /* Rectangle */ = {
 			isa = PBXGroup;
 			children = (
+				7F9644F015BBBAAF00341AE9 /* Complex */,
+				7F9644E815BBBA2E00341AE9 /* Fraction */,
 				7F9644C315BAF85C00341AE9 /* main.m */,
 				7F9644C715BAF85C00341AE9 /* Rectangle.1 */,
 				7F9644C515BAF85C00341AE9 /* Supporting Files */,
@@ -101,6 +109,24 @@
 				7F9644C615BAF85C00341AE9 /* Rectangle-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7F9644E815BBBA2E00341AE9 /* Fraction */ = {
+			isa = PBXGroup;
+			children = (
+				7F9644E915BBBA4200341AE9 /* Fraction.h */,
+				7F9644EA15BBBA4200341AE9 /* Fraction.m */,
+			);
+			name = Fraction;
+			sourceTree = "<group>";
+		};
+		7F9644F015BBBAAF00341AE9 /* Complex */ = {
+			isa = PBXGroup;
+			children = (
+				7F9644F115BBBAE600341AE9 /* Complex.h */,
+				7F9644F215BBBAE600341AE9 /* Complex.m */,
+			);
+			name = Complex;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +183,8 @@
 				7F9644D415BAF9ED00341AE9 /* Rectangle.m in Sources */,
 				7F9644D815BB020B00341AE9 /* Square.m in Sources */,
 				7F9644DB15BB094C00341AE9 /* XYPoint.m in Sources */,
+				7F9644EB15BBBA4200341AE9 /* Fraction.m in Sources */,
+				7F9644F315BBBAE600341AE9 /* Complex.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

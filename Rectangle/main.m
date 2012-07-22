@@ -7,42 +7,38 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Rectangle.h"
-#import "Square.h"
-#import "XYPoint.h"
-
+#import "Complex.h"
+#import "Fraction.h"
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
-        Rectangle   *myRect     = [[Rectangle alloc] init];
-        XYPoint     *myPoint    = [[XYPoint alloc] init];
+        Fraction *f1 = [[Fraction alloc] init];
+        Fraction *f2 = [[Fraction alloc] init];
+        Fraction *fracResult;
         
-        [myPoint setX:100 andY:200];
+        Complex *c1 = [[Complex alloc] init];
+        Complex *c2 = [[Complex alloc] init];
+        Complex *compResult;
         
-        [myRect setWidth:5 andHeight:8];
+        [f1 setTo:1 over:10];
+        [f2 setTo:2 over:15];
         
-        myRect.origin = myPoint;
+        [c1 setReal:18.0 andImaginary:2.5];
+        [c2 setReal:-5.0 andImaginary:3.2];
         
-        NSLog(@"Origin at (%i, %i)",
-               myRect.origin.x,
-               myRect.origin.y);
+        // add and print 2 complex numbers
         
-        [myPoint setX:50 andY:50];
+        [c1 print]; NSLog(@"         +"); [c2 print];
+        NSLog(@"-----------");
+        compResult = [c1 add:c2];
+        [compResult print];
+        NSLog(@"\n");
         
-        XYPoint *theOrigin = myRect.origin;
-        theOrigin.x = 200;
-        theOrigin.y = 300;
-        
-        XYPoint *atheOrigin = myRect.origin;
-        atheOrigin.x = 1200;
-        atheOrigin.y = 1300;
-        
-        
-        NSLog(@"Origin at (%i, %i)",
-              myRect.origin.x,
-              myRect.origin.y);
-        
+        // add and print 2 fractions
+        [f1 print]; NSLog(@"   +"); [f2 print];
+        NSLog(@"----");
+        [fracResult print];      
         
         
                

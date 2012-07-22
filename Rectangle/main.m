@@ -15,23 +15,37 @@ int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
-        
         Rectangle   *myRect     = [[Rectangle alloc] init];
         XYPoint     *myPoint    = [[XYPoint alloc] init];
         
         [myPoint setX:100 andY:200];
         
         [myRect setWidth:5 andHeight:8];
+        
         myRect.origin = myPoint;
         
-        NSLog(@"Rectangle w = %i, h = %i", 
-              myRect.width, myRect.height);
+        NSLog(@"Origin at (%i, %i)",
+               myRect.origin.x,
+               myRect.origin.y);
         
-        NSLog(@"Origin at (%i, %i)", myRect.origin.x,
+        [myPoint setX:50 andY:50];
+        
+        XYPoint *theOrigin = myRect.origin;
+        theOrigin.x = 200;
+        theOrigin.y = 300;
+        
+        XYPoint *atheOrigin = myRect.origin;
+        atheOrigin.x = 1200;
+        atheOrigin.y = 1300;
+        
+        
+        NSLog(@"Origin at (%i, %i)",
+              myRect.origin.x,
               myRect.origin.y);
         
-        NSLog(@"Area = %i, Perimeter = %i",
-              [myRect area], [myRect perimeter]);
+        
+        
+               
     }
     return 0;
 }

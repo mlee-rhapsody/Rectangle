@@ -6,25 +6,19 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "Square.h"
-#import "Complex.h"
 #import "Fraction.h"
-#import "Rectangle.h"
 
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
-        NSArray *myArray = [NSArray array];
+        Fraction *a, *b;
         
-        @try {
-            [myArray objectAtIndex:2];
-        }
-        @catch (NSException *exception) {
-            NSLog(@"Caught %@%@", exception.name, exception.reason);
-        }
-        NSLog(@"Execution continues");
+        a = [[Fraction alloc] initWith:1 over:3];
+        b = [[Fraction alloc] initWith:3 over:7];
+        
+        [a print];
+        [b print];
     }
         
     return 0;

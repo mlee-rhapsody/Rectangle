@@ -12,6 +12,7 @@
 
 @property int numerator, denominator;
 
+-(id) init;
 -(id)initWith:(int)n over:(int)d;
 -(void) print;
 -(void)setTo: (int)n over: (int) d;

@@ -12,18 +12,15 @@ int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
-        Fraction *a, *b;
-        Fraction *c;
+        Fraction *a, *b, *c;
         
-        a = [[Fraction alloc] initWith:1 over:3];
-        b = [[Fraction alloc] initWith:3 over:7];
-        c = [[Fraction alloc] init];
+        NSLog(@"Fraction allocated: %i", [Fraction count]);
         
-        [c setTo:3 over:4];
-        
-        [a print];
-        [b print];
-        [c print];
+        a = [[Fraction allocF] init];
+        b = [[Fraction allocF] init];
+        c = [[Fraction allocF] init];
+        NSLog(@"Fraction allocated: %i", [Fraction count]);
+    
     }
         
     return 0;

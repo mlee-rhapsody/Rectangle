@@ -7,11 +7,24 @@
 //
 
 #import "Fraction.h"
+static int gCounter;
 
 @implementation Fraction
 
 @synthesize numerator = _numerator;
 @synthesize denominator = _denominator;
+
++(Fraction *) allocF{
+    extern int gCounter;
+    ++gCounter;
+    
+    return [Fraction alloc];
+}
+
++(int)count{
+    extern int gCounter;
+    return gCounter;
+}
 -(void)print
 {
     NSLog(@"%i/%i", self.numerator, self.denominator);

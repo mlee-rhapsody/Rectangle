@@ -11,6 +11,9 @@
 @interface Fraction : NSObject
 
 @property int numerator, denominator;
++(Fraction *) allocF;
++(int) count;
+
 
 -(id) init;
 -(id)initWith:(int)n over:(int)d;
